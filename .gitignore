@@ -1,0 +1,9 @@
+.mvn/wrapper/*.jar
+target/
+dependency-reduced-pom.xml
+*.log
+
+.project
+.classpath
+.settings/
+.idea

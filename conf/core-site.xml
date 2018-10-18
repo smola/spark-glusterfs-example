@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>fs.glusterfs.impl</name>
+        <value>org.apache.hadoop.fs.glusterfs.GlusterFileSystem</value>
+    </property>
+    <property>
+        <name>fs.default.name</name>
+        <value>glusterfs:///</value>
+    </property>
+
+    <property>
+        <name>fs.AbstractFileSystem.glusterfs.impl</name>
+        <value>org.apache.hadoop.fs.local.GlusterFs</value>
+    </property>
+    <property>
+        <name>fs.glusterfs.volumes</name>
+        <value>gv0</value>
+    </property>
+    <property>
+        <name>fs.glusterfs.volume.fuse.gv0</name>
+        <value>/mnt/gv0</value>
+    </property>
+</configuration>
